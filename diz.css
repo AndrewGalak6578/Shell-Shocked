@@ -1,0 +1,85 @@
+.cp4 {
+    margin-left: -240px;
+    margin-top: 10px;
+}
+
+li:nth-child(2n + 2) {
+    list-style: none;
+}
+
+ol {
+    line-height: 35px;
+}
+
+.image {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.image__img {
+    display: block;
+    width: 100%;
+
+}
+
+.image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+    border-radius: 6px;
+}
+
+
+
+.image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+    opacity: 1;
+}
+
+.image__overlay:hover > * {
+    transform: translateY(0px);
+}
+
+
+
+.image__title {
+    font-weight: bold;
+    font-size: 2em;
+    margin-top: -10px;
+}
+
+.image__description {
+    margin-top: 2px;
+}
+
+
+.slide--2 {
+    inherits: ".mySlides";
+}
+
+
+.contact{
+    height: 15%;
+    width: 15%;
+}
+
+
+.img__logo {
+    height: 5%;
+    width: 5%;
+}
+
